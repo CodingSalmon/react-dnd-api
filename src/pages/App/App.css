@@ -1,28 +1,45 @@
 .App {
   text-align: center;
 }
-body {
-  width: 100%;
-}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  border-radius: 50%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: clamp(400px, 80vw, 1200px);
+  margin: auto;
   justify-content: center;
+}
+
+#classDiv {
+  border: 1px solid black;
+  width: 125px;
+  display: grid;
+  justify-items: center;
+  padding: 15px;
+  margin: 1rem;
+}
+
+.App-header {
+  background-color: #b3ccff;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -38,47 +55,4 @@ body {
   to {
     transform: rotate(360deg);
   }
-}
-.nav {
-  width: 100%;
-}
-.nav-wrapper {
-  background-color: rgba(10, 168, 84, 0.692);
-}
-
-@font-face {
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Material Icons"),
-       local("MaterialIcons-Regular"),
-       url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.woff2) format("woff2"),
-       url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.woff) format("woff"),
-       url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.ttf) format("truetype");
-}
-
-.material-icons {
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: "liga";
 }
