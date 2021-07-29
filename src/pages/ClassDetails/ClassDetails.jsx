@@ -11,7 +11,7 @@ const ClassDetails = () => {
       const details = await getDetails(location.state.classTitle.url);
       setClassDetails(details);
     })();
-  });
+  }, [location]);
 
   return (
     <div>

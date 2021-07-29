@@ -10,7 +10,7 @@ const ClassList = () => {
       const classData = await getClassList();
       setResults(classData.results);
     })();
-  });
+  }, []);
 
   return (
     <>

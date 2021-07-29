@@ -11,7 +11,7 @@ const SpellDetails = () => {
       const details = await getSpellDetails(name)
       setSpellDetails(details)
     })()
-  })
+  }, [name])
 
   return ( 
     <>

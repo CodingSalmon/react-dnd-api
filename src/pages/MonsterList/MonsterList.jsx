@@ -10,7 +10,7 @@ const MonsterList = () => {
       const monsterData = await getMonsterList();
       setMonsterList(monsterData.results);
     })()
-  })
+  }, [])
 
   return (
     <>

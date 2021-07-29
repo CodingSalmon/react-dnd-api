@@ -11,7 +11,7 @@ const MonsterDetails = () => {
       const details = await getDetails(location.state.monster.url);
       setMonsterDetails(details);
     })()
-  })
+  }, [location])
   
   return (
     <>
