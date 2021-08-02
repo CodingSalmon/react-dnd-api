@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const SpellCard = ({spell}) => {
+const SpellCard = ({ spell }) => {
   return ( 
     <>
       <Link
